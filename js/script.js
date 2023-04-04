@@ -6,7 +6,7 @@ let resetElement = document.querySelector(".js-reset");
 
 let USD = 4.46;
 let EUR = 4.74;
-let GBP = 5.37;
+let GBP = 5.32;
 
 formElement.addEventListener("reset", () => {
     console.log(`Formularz został zresetowany`);
