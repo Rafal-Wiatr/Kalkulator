@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,33 +21,39 @@
         <form class="js-form">
             <h1 class="form__header">Currency Calculator</h1>
             <fieldset>
-                <legend class="form__legend">
-                    Enter the amount in PLN
-                </legend>
-                <p class="form__amount">
-                    <input type="number" class="js-pln" required min="1" step="any">
+                <p>
+                    <label class="form__legend">
+                        Enter the amount in PLN
+                    </label>
+
+                    <span class="form__field form__amount">
+                        <input type="number" class="js-pln" required min="1" step="any">
+                    </span>
+                </p>
+                <p>
+                    <label class="form__legend">
+                        Choose a currency
+                    </label>
+                    <label>
+                        <select class="form__field js-currency" name="currency">
+                            <option value="EUR">EURO</option>
+                            <option value="USD">USD</option>
+                            <option value="GBP">GBP</option>
+                        </select>
+                    </label>
                 </p>
             </fieldset>
-            <p>
-                <label>
-                    <span class="form__labelText">
-                        Choose a currency</span>
-                    <select class="js-currency" name="currency">
-                        <option value="EUR">EURO</option>
-                        <option value="USD">USD</option>
-                        <option value="GBP">GBP</option>
-                    </select>
-                </label>
-            </p>
-            <p>
-                <button class="button--submit" type="submit" class="js-submit">
-                    Count the exchange in PLN:
-                </button>
+            <fildset>
+                <p>
+                    <button class="button--submit" type="submit" class="js-submit">
+                        Count the exchange in PLN:
+                    </button>
+                </p>
                 <button class="button--reset" type="reset" class="js-reset">Clear the form</button>
-            </p>
-            <filedset>
-                <p>Amount after conversion:<strong class="js-result">N/A</strong></p>
-            </filedset>
+                </p>
+                <p>
+                    Amount after conversion:<strong class="js-result">N/A</strong></p>
+                </filedset>
         </form>
     </div>
 </body>
